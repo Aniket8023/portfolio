@@ -1,0 +1,193 @@
+.about-me-container {
+  margin-left: 240px;
+  background-color: #111;
+  color: #fff;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  animation: slideIn 0.6s ease-in-out;
+  min-height: 100vh;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+h2 {
+  color: #fff;
+  border-left: 4px solid #ff4c29;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: #fff;
+  font-weight: 600;
+}
+
+.role {
+  color: #ff4c29;
+  font-weight: 600;
+}
+
+.description {
+  color: #ccc;
+  margin: 1rem 0 1.5rem;
+}
+
+// Align personal info + skills to description
+.info-skills-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0; // no extra margin
+  padding: 0; // no left padding
+}
+
+// Personal Info Grid
+.personal-info-grid {
+  display: flex;
+  gap: 2rem;
+  flex: 2;
+}
+
+.info-left,
+.info-right {
+  flex: 1;
+}
+
+.info-left p,
+.info-right p {
+  color: #ddd;
+  margin: 0;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 5px 0 15px;
+}
+
+// Skills Section
+.skills {
+  flex: 1.2;
+  min-width: 250px;
+}
+
+.skill {
+  margin-bottom: 1rem;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  color: #fff;
+}
+
+.progress {
+  background-color: #333;
+  border-radius: 5px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.bar {
+  background-color: #ff4c29;
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+// Resume Button
+.resume-btn {
+  margin-top: 1rem;
+}
+
+.resume-btn .btn {
+  background-color: #ff4c29;
+  border: 2px solid #ff4c29;
+  color: #ddd;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-btn .btn:hover {
+  background-color: #e03e1f;
+  color: #fff;
+}
+
+.timeline-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.timeline-box {
+  flex: 1;
+  background-color: #1c1c1c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-box h2 {
+  border-left: 4px solid #ff4c29;
+  padding-left: 10px;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #ff4c29;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  height: 12px;
+  width: 12px;
+  background-color: #ff4c29;
+  border-radius: 50%;
+}
+
+.timeline-item .date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.timeline-item h4 {
+  color: #fff;
+  margin: 0.2rem 0;
+}
+
+.timeline-item p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 0;
+}
+

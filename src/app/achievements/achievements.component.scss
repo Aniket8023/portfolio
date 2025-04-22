@@ -1,0 +1,101 @@
+.achievements-container {
+    margin-left: 240px;
+    background-color: #111;
+    color: #fff;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    animation: slideIn 0.6s ease-in-out;
+    min-height: 100vh;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  h2 {
+    color: #fff;
+    border-left: 4px solid #ff4c29;
+    padding-left: 10px;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .card {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #ff4c29;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+  
+  .card p {
+    color: #ccc;
+    font-size: 1rem;
+    margin: 0.4rem 0;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ff4c29;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .card a:hover {
+    color: #e03e1f;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 120%;
+    height: 5px;
+    background: linear-gradient(90deg, #ff4c29, #e03e1f);
+    transform: translateX(-50%);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

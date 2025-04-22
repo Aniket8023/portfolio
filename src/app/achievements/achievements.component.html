@@ -1,0 +1,13 @@
+<section class="achievements-container">
+    <h2>🏆 Achievements & Certifications</h2>
+  
+    <div class="grid md:grid-cols-2 gap-6">
+      <div *ngFor="let item of achievements" class="card" [@slideIn]>
+        <h3>{{ item.title }}</h3>
+        <p><strong>Issued by:</strong> {{ item.issuer }}</p>
+        <p><strong>Date:</strong> {{ item.date }}</p>
+        <a *ngIf="item.link" [href]="item.link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+  </section>
+  

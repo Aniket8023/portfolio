@@ -1,0 +1,107 @@
+.hero-container {
+  margin-left: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 7rem;
+}
+
+.animate-once {
+  h1 {
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #FF5722;
+    width: 0;
+    animation: typing 2s steps(30) 0.5s forwards, blink 1s step-end infinite;
+    padding-right: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeIn 1.5s 2s forwards;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 1.5s 3s forwards;
+  }
+
+  .about-btn {
+    margin-top: 2rem;
+    background-color: #FF5722;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1.5s 3.5s forwards;
+  }
+
+  .image-section {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: slideIn 1.0s 4s forwards;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image-section {
+    order: -1; /* Move image to the top on mobile */
+  }
+}
+
+
+// Keyframes for the animations
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #FF5722; /* Ensure the color matches the original border color */
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  
+}

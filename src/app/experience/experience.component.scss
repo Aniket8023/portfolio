@@ -1,0 +1,77 @@
+.experience-container {
+    margin-left: 240px;
+    margin-top: 2rem ;
+    padding: 1.5rem;
+    background-color: #1a1a1a; /* Darker gray to contrast with black background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+}
+
+.experience-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff; /* White text to stand out on dark background */
+    margin-bottom: 2rem;
+}
+
+.experience-item {
+    background: #333; /* Lighter dark background for each experience item */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item h2 {
+    font-size: 1.8rem;
+    color: #FFC107; /* Yellow color for headings to make them pop */
+    margin-bottom: 1rem;
+}
+
+.experience-item p {
+    font-size: 1.1rem;
+    color: #ddd; /* Lighter gray text for better contrast */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.experience-item a {
+    color: #3498db; /* Blue for links */
+    text-decoration: none;
+}
+
+.experience-item a:hover {
+    text-decoration: underline;
+}
+
+.experience-item ul {
+    padding-left: 1.5rem;
+}
+
+.experience-item ul li {
+    font-size: 1.1rem;
+    color: #ddd; /* Light gray color for list items */
+    margin-bottom: 0.5rem;
+}
+
+.experience-item ul li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #FF5722; /* Orange checkmark for visual appeal */
+}
+
+@keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideInRight 0.6s ease-out;
+  }

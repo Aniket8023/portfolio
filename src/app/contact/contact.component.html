@@ -1,0 +1,58 @@
+<div class="container">
+  <!-- Contact Me Title - Top Left -->
+  <div class="contact-title">
+    <br>
+    <h1>Contact Me</h1>
+  </div>
+
+  <main class="contact-section">
+    <div class="center-content">
+      <!-- Question Title -->
+      <h3>Have You Any Questions?</h3>
+      <p class="subtitle">I'M AT YOUR SERVICE</p>
+      <br><br><br>
+
+      <!-- Contact Info Cards -->
+      <div class="contact-info">
+        <div class="info-box">
+          <i class="fa fa-phone"></i>
+          <h4>Call Us On</h4>
+          <p>+91 8669059714</p>
+        </div>
+        <div class="info-box">
+          <i class="fa fa-map-marker"></i>
+          <h4>From</h4>
+          <p>Lonavala, Pune-410401</p>
+        </div>
+        <div class="info-box">
+          <i class="fa fa-envelope"></i>
+          <h4>Email</h4>
+          <p><a href="mailto:info@gmail.com">aniketsolanke1404@gmail.com</a></p>
+        </div>
+        <div class="info-box">
+          <i class="fa fa-globe"></i>
+          <h4>Website</h4>
+          <p><a href="https://www.example.com/" target="_blank">full stack java developer.com</a></p>
+        </div>
+      </div>
+      <br><br><br>
+
+      <!-- Send Me Email Section -->
+      <div class="email-section">
+        <h3>SEND ME AN EMAIL</h3>
+        <p>I'M VERY RESPONSIVE TO MESSAGES</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form" (submit)="sendEmail($event)">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" name="user_name" required />
+          <input type="email" placeholder="Your Email" name="user_email" required />
+        </div>
+        <input type="text" placeholder="Subject" class="full-width" name="subject" required />
+        <textarea rows="5" placeholder="Your Message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+</div>
