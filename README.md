@@ -24,7 +24,6 @@ Welcome to my personal developer portfolio website built using **Angular** frame
 
 ## 🛠️ Tech Stack
 
-## 🛠️ Tech Stack
 
 - **Frontend**: Angular, HTML, CSS, TypeScript
   
