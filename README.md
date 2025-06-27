@@ -27,7 +27,7 @@ Welcome to my personal developer portfolio website built using **Angular** frame
 
 - **Frontend**: Angular, HTML, CSS, TypeScript
   
-- **Deployment**: Vercel / Netlify / GitHub Pages
+- **Deployment**: Vercel
 
 ---
 
