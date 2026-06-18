@@ -2,7 +2,7 @@
 
 Welcome to my personal developer portfolio website built using **Angular** framework. This website showcases my journey, skills, and projects as a Full Stack Java Developer. 👨‍💻✨
 
-🔗 **Live Website**: [Click here to view](https://portfolio-amber-delta-59.vercel.app/)
+🔗 **Live Website**: [Click here to view](https://portfolio-aniket-vijay-solankes-projects.vercel.app/)
 
 ---
 
